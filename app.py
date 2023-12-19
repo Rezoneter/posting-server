@@ -29,6 +29,6 @@ api.add_resource(UserLogoutResource,'/user/logout')
 api.add_resource(PostingListResource,'/posting')
 api.add_resource(FollowResource, '/follow/<int:followee_id>')
 api.add_resource(PostingResource, '/posting/<int:posting_id>')
-api.add_resource(LikeResource,'/like/<int:posting_id')
+api.add_resource(LikeResource,'/like/<int:posting_id>')
 if __name__ == '__main__':
     app.run()

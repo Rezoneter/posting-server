@@ -15,7 +15,7 @@ class UserRegisterResource(Resource) :
         # 1. 클라이언트가 보낸 데이터를 받는다.
         data = request.get_json()
 
-        # {
+        # { 
         #     "username": "홍길동",
         #     "email": "abc@naver.com",
         #     "password": "1234"

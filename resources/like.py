@@ -15,7 +15,7 @@ class LikeResource(Resource):
         try:
             connection = get_connection()
 
-            query =''' insert into `like`
+            query ='''insert into `like`
                         (userId, postingId)
                         values
                         (%s, %s);
@@ -44,7 +44,7 @@ class LikeResource(Resource):
         try:
             connection = get_connection()
 
-            query = ''' delete from `like`
+            query = '''delete from `like`
                         where userId = %s and postingId = %s;
                         '''
             record = (user_id, posting_id)
